@@ -1,7 +1,5 @@
 package QuickSort;
 
-
-
 public class Teste {
     public static void main(String[] args) {
         QuickSort quickSort = new QuickSort(); // Instancia a classe QuickSort
@@ -9,6 +7,9 @@ public class Teste {
 
         System.out.println("Array desordenado: "); // Exibe o array desordenado
         quickSort.printArray(array); // Chama o método printArray para exibir o array
+        System.out.println(); // Pula uma linha
+
+        quickSort.quickSort(array, 0, array.length - 1); // Chama o método quickSort para ordenar o array
         System.out.println(); // Pula uma linha
 
         System.out.println("Array ordenado: "); // Exibe o array ordenado
